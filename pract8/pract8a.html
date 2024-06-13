@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+    }
+    #display {
+        width: 50vw;
+        height: auto;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div id="display">
+        <div>enter any text : <input id="first" type="text"></div>
+        <div>enter how many times to print : <input id="second" type="number"></div>
+        <button id="cal">print output =</button>
+        <div>Output : <p class="output"></p></div>
+    </div>
+
+<script>
+    let cal = document.querySelector("#cal");
+    let output = document.querySelector(".output");
+    
+    function func(second,one){
+        for(let i=0;i<second;i++)
+        {
+            output.innerText += one ; 
+            output.innerHTML += "<br>" ;
+        }
+
+    }
+    cal.addEventListener("click",()=>{
+        let one = (document.querySelector("#first")).value;
+        let second = parseInt((document.querySelector("#second")).value);
+        console.log(second);
+        
+        func(second,one);
+    })
+    
+    
+</script>    
+</body>
+</html>

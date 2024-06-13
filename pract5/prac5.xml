@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books SYSTEM "books.dtd">
+<books>
+    <book>
+        <title>Harry Potter and the Sorcerer's Stone</title>
+        <author>J.K. Rowling</author>
+        <isbn>9780590353427</isbn>
+        <publisher>Scholastic</publisher>
+        <edition>First</edition>
+        <price>10.99</price>
+    </book>
+    <book>
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <isbn>9780743273565</isbn>
+        <publisher>Charles Scribner's Sons</publisher>
+        <edition>Revised edition</edition>
+        <price>9.99</price>
+    </book>
+    <book>
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <isbn>9780061120084</isbn>
+        <publisher>Harper Perennial Modern Classics</publisher>
+        <edition>50th Anniversary Edition</edition>
+        <price>8.99</price>
+    </book>
+    <book>
+        <title >The Catcher in the Rye</title>
+        <author>J.D. Salinger</author>
+        <isbn>9780316769488</isbn>
+        <publisher>Little, Brown and Company</publisher>
+        <edition>Reprint</edition>
+        <price>7.99</price>
+    </book>
+
+</books>

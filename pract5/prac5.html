@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Information</title>
+    <link rel="stylesheet" type="text/css" href="prc5.css">
+    <script>
+        function loadXMLDoc(filename) {
+            if (window.XMLHttpRequest) {
+                xhttp = new XMLHttpRequest();
+            } else {
+                xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xhttp.open("GET", filename, false);
+            xhttp.send("");
+            return xhttp.responseXML;
+        }
+
+        function displayBooks() {
+            var xml = loadXMLDoc("prc5.xml");
+            var xsl = loadXMLDoc("prc5.xsl");
+
+            // code for IE
+            if (window.ActiveXObject || "ActiveXObject" in window) {
+                var ex = xml.transformNode(xsl);
+                document.getElementById("booksTable").innerHTML = ex;
+            }
+            // code for Chrome, Firefox, Opera, etc.
+            else if (document.implementation && document.implementation.createDocument) {
+                var xsltProcessor = new XSLTProcessor();
+                xsltProcessor.importStylesheet(xsl);
+                var resultDocument = xsltProcessor.transformToFragment(xml, document);
+                document.getElementById("booksTable").appendChild(resultDocument);
+            }
+        }
+    </script>
+</head>
+<body onload="displayBooks()">
+    <div id="booksTable"></div>
+</body>
+</html>

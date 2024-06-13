@@ -1,0 +1,18 @@
+<bookstore>
+            <book>
+                        <title>web programming</title>
+                        <author>chrisbates</author>
+                        <ISBN>123-456-789</ISBN>
+                        <publisher>wiley</publisher>
+                        <edition>3</edition>
+                        <price>350</price>
+            </book>
+            <book>
+                        <title>internet worldwideweb</title>
+                        <author>ditel&amp;amp;ditel</author>
+                        <ISBN>123-456-781</ISBN>
+                        <publisher>perso<;/publisher>
+                        <edition>3</edition>
+                        <price>450</price>
+            </book>
+</bookstore>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: block;
+            margin: auto;
+        }
+
+        body {
+            background-color: rgb(225, 237, 237);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <fieldset>
+            <legend>
+                <h2>Register User Information: </h2>
+            </legend>
+
+            <br />
+
+            <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp"
+            onsubmit="return validateform()">
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter First Name" /><br />
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" /><br />
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" /><br />
+
+                <label for="mobno">Mobile Number :</label>
+                <input type="tel" pattern="[0-9]{10}" title="Please Enter 10 digit Mobile Number" id="number" name="number" placeholder="Enter the number" /><br />
+
+                <label for="password">Password:</label>
+                <input type="password" id="pass" name="password" placeholder="Enter Password" /><br />
+
+                <label for="cpassword">confirm password</label>
+                <input type="password" id="cpass" name="confirmpassword" placeholder="Reenter" /><br />
+
+                <label for=" address">Address:</label>
+                <textarea rows="4" cols="50" id="address" name="address"></textarea><br />
+
+                <button type="submit" class="btn btn-primary" onclick="validateform()">Submit</button>
+
+                <button type="reset" class="btn btn-default">Reset</button>
+
+            </form>
+        </fieldset>
+    </div>
+                <script>
+                    function validateform() {
+                        var name = document.myform.name.value;
+                        var lname = document.myform.name.value;
+                        var password = document.myform.password.value;
+                        var email = document.myform.name.value;
+                        var mobile = document.myform.name.value;
+                        var adress = document.myform.name.value;
+                        // var lname=document.myform.name.value; 
+            
+                        if (name == null || name == "") {
+                            alert("Name can't be blank");
+                            return false;
+                        } else if (password.length < 6) {
+                            alert("Password must be at least 6 characters long.");
+                            return false;
+                        }
+                        else if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+                            alert('Please enter a valid e-mail address');
+                            return false;
+                        }
+                        else if (lname == null || lname == "") {
+                            alert("Last Name cannot be empty!");
+                        }
+                        else if (mobile.length != 10) {
+                            alert("Mobile number should have 10 digits");
+                            return false;
+                        }
+                        // else id(adress != ""){
+                        //     alert("Address field is required");
+                        //     return false;
+                        // }
+                        // return true;
+                    }       
+                </script>
+</body>
+
+</html>

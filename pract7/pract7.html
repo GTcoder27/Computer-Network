@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        margin: 2vw 2vh; 
+    }
+    
+
+</style>
+<body>
+    <div id="calculator">
+        <div class="enter"> Enter first Number : <input type="number" name="" id="a"></div>
+        <div class="enter">Enter operator Number :<input type="text" name="" id="operator"></div>
+        <div class="enter">Enter second Number :<input type="number" name="" id="b"></div>
+        <button class="calculate">Calculate</button>
+        Output = 
+        <span class="answer">Answer will display here </span>
+        
+    </div>
+
+<script>
+    let output = document.querySelector(".answer");
+    function cal(a,b,op)
+    {
+        if(op === "+")
+        {
+            output.innerText = a+b;
+            console.log(a+b);
+            alert(`Your answer is ${a+b}`);
+        }
+        else if(op === "-")
+        {
+            output.innerText = a-b;
+            console.log(a-b);
+            alert(`Your answer is ${a-b}`);
+        }
+        else if(op === "*")
+        {
+            output.innerText = a*b;
+            console.log(a*b);
+            alert(`Your answer is ${a*b}`);
+        }
+        else if(op === "/")
+        {
+            output.innerText = a/b;
+            console.log(a/b);
+            alert(`Your answer is ${a/b}`);
+        }
+    }
+    let calculate = document.querySelector(".calculate");
+    calculate.addEventListener("click",()=> {
+        let a = parseFloat(document.querySelector("#a").value);
+        let op = document.querySelector("#operator").value;
+        let b = parseFloat(document.querySelector("#b").value);
+        
+        cal(a,b,op);
+    })
+</script>
+
+</body>
+</html>

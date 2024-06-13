@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical8a</title>
+    <style>
+        /* .main{
+            padding: 10px;
+            word-spacing: 5px;
+            line-height: 10px;
+        }
+        .number, .number2 {
+            height: 200px;
+            width: 400px;
+            border: 1px solid red;
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <!-- Enter the Text you want to repeat<input type="text" placeholder="Enter the Text you want to repeat" id="text"><br> -->
+        Enter number of times you want to repeat<input type="text" placeholder="Enter number of times you want to repeat" id="num"><br>
+        <button id="Write">Write</button><br>
+        <fieldset>
+            <legend>Even Numbers</legend>
+            <div class="number"></div>
+        </fieldset>
+        <fieldset>
+            <legend> Odd Numbers</legend>
+            <div class="number2"></div>
+        </fieldset>
+    </div>
+    <script>
+        let Write = document.getElementById("Write");
+        let area = document.querySelector(".number");
+        let area2 = document.querySelector(".number2");
+
+        Write.addEventListener("click", function() {
+            // let inpu = document.getElementById("text").value;
+            let num = parseInt(document.getElementById("num").value);
+            for (let index = 0; index < num; index++) {
+                // const element = num;
+                if (index%2==0) {
+                    area.innerText += `${index} \n\n `;
+                }
+                else
+                {
+                    area2.innerText += `${index} \n\n `;
+                }
+                
+            }
+        });
+        
+    </script>
+</body>
+</html>

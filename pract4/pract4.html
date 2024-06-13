@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Books</title>
+</head>
+<body>
+  <h1>Programming Books</h1>
+  <div id="book-list"></div>
+
+  <script>
+    const jsonData = `{
+      "programmingBooks": [
+        {
+          "title": "JavaScript: The Good Parts",
+          "edition": "1st",
+          "author": "Douglas Crockford"
+        },
+        {
+          "title": "Eloquent JavaScript",
+          "edition": "3rd",
+          "author": "Marijn Haverbeke"
+        },
+        {
+          "title": "You Don't Know JS: Scope & Closures",
+          "edition": "1st",
+          "author": "Kyle Simpson"
+        },
+        {
+          "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+          "edition": "1st",
+          "author": "Robert C. Martin"
+        },
+        {
+          "title": "The Pragmatic Programmer: Your Journey to Mastery",
+          "edition": "20th Anniversary Edition",
+          "author": "Andrew Hunt and David Thomas"
+        }
+      ]
+    }`;
+
+    const books = JSON.parse(jsonData).programmingBooks;
+    // const bookList = document.getElementById('book-list');
+
+    books.forEach(book => {
+        document.write(book.title,`<br>`);
+        
+
+    //   const bookItem = document.createElement('div');
+    //   bookItem.innerHTML = `<h2>${book.title}</h2>
+    //                         <p>Edition: ${book.edition}</p>
+    //                         <p>Author: ${book.author}</p>`;
+    //   bookList.appendChild(bookItem);
+    });
+  </script>
+</body>
+</html>

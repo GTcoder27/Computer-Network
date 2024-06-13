@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .outer
+    {
+        background: url(6.avif);
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+        
+    }
+    .myform{
+        background-color: rgba(39, 39, 39, 0.154);
+        backdrop-filter: blur(5px);
+        color: rgb(255, 255, 255);
+        width: 40vw;
+        height: auto;
+        border-radius: 15px;
+        padding: 34px;
+        box-shadow: 3px 3px 30px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .myform button {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        margin: auto;
+        margin-left: 50px ;
+    }
+    .myform button:hover {
+        box-shadow: 1px 1px 23px 7px rgb(99, 188, 188);
+        background-color: rgb(99, 188, 188);
+    }
+
+</style>
+<body>
+
+    <div class="outer">
+        
+        <div class="myform" >
+        <h1>Personal Information</h1>
+        
+        <form action="/submit_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+            
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city"><br><br>
+            
+            <label for="mobile">Mobile No.:</label><br>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+            
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            
+            <label for="dob">DOB:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+            
+            <label for="education">Education Qualification:</label><br>
+            <select id="education" name="education">
+                <option value="high_school">High School</option>
+                <option value="college">College</option>
+                <option value="graduate">Graduate</option>
+                <option value="post_graduate">Post Graduate</option>
+            </select><br><br>
+            
+            <!-- <input type="submit" value="Submit"> -->
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

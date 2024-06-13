@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+  <!ELEMENT book (title, author, isbn, publisher, edition, price)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT isbn (#PCDATA)>
+  <!ELEMENT publisher (#PCDATA)>
+  <!ELEMENT edition (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+<book>
+  <title>Effective JavaScript</title>
+  <author>David Herman</author>
+  <isbn>978-0321812186</isbn>
+  <publisher>Addison-Wesley</publisher>
+  <edition>1st</edition>
+  <price>39.99</price>
+</book>
