@@ -1,0 +1,708 @@
+ 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Practical-1</title> 
+</head> 
+<body style="background-color:cyan" > 
+    <h1>This is my first website</h1> 
+    <h2>second</h2> 
+    <h3>third</h3>  
+       
+    <p title="First paragraph" style="color: black;"> 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde perferendis 
+dignissimos repudiandae quibusdam assumenda consequatur repellendus soluta fugit 
+cupiditate veniam placeat et ab inventore maiores temporibus quam, repellat officia 
+explicabo! 
+    </p> 
+     
+    <p title="second paragraph" style="color: black;"> 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque magni 
+dignissimos consequatur expedita quaerat delectus tenetur reprehenderit, sapiente numquam 
+molestiae blanditiis. Autem velit sapiente cupiditate, fugit in asperiores incidunt 
+debitis quisquam ut distinctio accusantium animi esse dignissimos excepturi consequuntur! 
+Aut et aliquam recusandae. Necessitatibus ullam quae alias distinctio in iusto corporis 
+repellat ratione magni. Ut, voluptatem maxime? Alias ullam veniam quod tenetur inventore 
+nisi voluptatibus fuga reprehenderit incidunt qui ea delectus facere nobis cumque iusto, 
+doloribus nemo expedita, recusandae accusantium numquam, est eaque quibusdam dolorum! 
+Distinctio amet molestiae veniam! 
+        <br> 
+        <a href="https:\www.google.com">for more info</a> 
+    </p> 
+     
+    <img src="./premium_photo-1683910767532-3a25b821f7ae.avif"> 
+</body> 
+</html>   
+ 
+Prac 2 
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Registration form</title>  
+</head>  
+<style>  
+      
+    *{  
+    background-color: rgb(104, 222, 216);  
+    }  
+  
+#sub{  
+    background-color: aqua;  
+    }   
+</style>  
+<body>  
+     <form>  
+         <fieldset>  
+                <legend>  
+                    <h1>Registration Form</h1>  
+                </legend>  
+        <br><br>  
+        <b>  
+        Name:<input type="text" id="sname" name="sname" placeholder="Enter your  
+Name"></input>  
+        <br>  
+        <br>  
+        Adress:  
+        <br>  
+        <textarea rows="5" cols="50" id="sadd" Adress="sadd" placeholder="Enter  
+your Adress"></textarea>  
+        <br>  
+        <br>  
+        City:<input type="text " id="scit" city="scit" placeholder="City  
+name"></input>  
+        <br>  
+        <br>  
+        Mobile no:<input type="number" id="snum" Mobile no="snum"  
+placeholder="Mobile no"></input>  
+        <br>  
+        <br>  
+        Gender:<input type="radio" name="gender">Male</input>  
+        <input type="radio" name="gender">Female</input>  
+        <br>  
+        <br>  
+        DOB:<input type="date" id="sdate" DOB="sdate">  
+        <br>  
+        <br>  
+        Educational Qualification:<input type="text" id="sed" Educational  
+Qalification="sed" placeholder="Qualificaiton">  
+        <br>  
+        <br>  
+        <input type="submit" id="sub" value="Submit">  
+        </b>  
+        </fieldset>  
+    </form>   
+</body>  
+</html>  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+Prc 3 
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>  
+</head>  
+<style>  
+    *{  
+        padding: 0;  
+        margin: 0;  
+        font-size: 1.1rem;  
+          
+    }  
+    h1 {  
+        font-size: 2rem;  
+    }  
+    .outer  
+    {  
+        background: url(1.avif);  
+        background-repeat: no-repeat;  
+        height: 100vh;  
+        width: 100vw;  
+        background-size: cover;  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+        flex-direction: column;  
+        overflow: auto;  
+          
+    }  
+    .myform{  
+        background-color: rgba(255, 255, 255, 0);  
+        backdrop-filter: blur(10px);  
+        color: rgb(255, 255, 255);  
+        width: 40vw;  
+        height: auto;  
+        border-radius: 15px;  
+        padding: 34px;  
+        box-shadow: 3px 3px 30px black;  
+        display: flex;  
+        flex-direction: column;  
+        justify-content: center;  
+        align-items: center;  
+          
+    }  
+    .myform button {  
+        width: 100px;  
+        height: 50px;  
+        border-radius: 10px;  
+        margin: auto;  
+        margin-left: 50px ;  
+    }  
+    .myform button:hover {  
+        box-shadow: 1px 1px 23px 7px rgb(99, 188, 188);  
+        background-color: rgb(99, 188, 188);  
+    }  
+  
+</style>  
+<body style="color: black;">  
+  
+    <div class="outer" >  
+          
+        <div class="myform" >  
+        <h1 style="color: black;">Personal Information</h1>  
+          
+        <form action="/submit_form.php" method="post" >  
+            <label for="name" style="color: black;">Name:</label><br>  
+            <input type="text" id="name" name="name" required><br><br>  
+              
+            <label for="address" style="color: black;">Address:</label><br>  
+            <input type="text" id="address" name="address"><br><br>  
+              
+            <label for="city" style="color: black;">City:</label><br>  
+            <input type="text" id="city" name="city"><br><br>  
+              
+            <label for="mobile" style="color: black;">Mobile No.:</label><br>  
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"  
+required><br><br>  
+              
+            <label for="gender" style="color: black;">Gender:</label><br>  
+            <input type="radio" id="male" name="gender" value="male">  
+            <label for="male" style="color: black;">Male</label>  
+            <input type="radio" id="female" name="gender" value="female">  
+            <label for="female" style="color: black;">Female</label><br><br>  
+              
+            <label for="dob" style="color: black;">DOB:</label><br>  
+            <input type="date" id="dob" name="dob" required><br><br>  
+              
+            <label for="education" style="color: black;">Education  
+Qualification:</label><br>  
+            <select id="education" name="education">  
+                <option value="high_school">High School</option>  
+                <option value="college">College</option>  
+                <option value="graduate">Graduate</option>  
+                <option value="post_graduate">Post Graduate</option>  
+            </select><br><br>  
+              
+            <button>Submit</button>  
+        </form>  
+    </div>  
+</div>  
+</body>  
+</html>  
+   
+ 
+Prc 4 
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>  
+    <link rel="stylesheet" href="style.css"> 
+</head>  
+ 
+<body style="color: black;">  
+  
+    <div class="outer" >  
+          
+        <div class="myform" >  
+        <h1 style="color: black;">Registration Form</h1>  
+        <br> 
+          
+        <form >  
+            <label for="name" style="color: black;">Name:</label><br>  
+            <input type="text" id="name" name="name" required><br><br>  
+              
+            <label for="address" style="color: black;">Address:</label><br>  
+            <input type="text" id="address" name="address"><br><br>  
+              
+            <label for="city" style="color: black;">City:</label><br>  
+            <input type="text" id="city" name="city"><br><br>  
+              
+            <label for="mobile" style="color: black;">Mobile No.:</label><br>  
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" 
+required><br><br>  
+              
+            <label for="gender" style="color: black;">Gender:</label><br>  
+            <input type="radio" id="male" name="gender" value="male">  
+            <label for="male" style="color: black;">Male</label>  
+            <input type="radio" id="female" name="gender" value="female">  
+            <label for="female" style="color: black;">Female</label><br><br>  
+              
+            <label for="dob" style="color: black;">DOB:</label><br>  
+            <input type="date" id="dob" name="dob" required><br><br>  
+              
+            <label for="education" style="color: black;">Education 
+Qualification:</label><br>  
+            <select id="education" name="education">  
+                <option value="high_school">High School</option>  
+                <option value="college">College</option>  
+                <option value="graduate">Graduate</option>  
+                <option value="post_graduate">Post Graduate</option>  
+            </select><br><br>  
+              
+            <button>Submit</button>  
+        </form>  
+    </div>  
+</div>  
+</body>  
+</html>  
+   
+ 
+*{  
+    padding: 0;  
+    margin: 0;  
+    font-size: 1.1rem;  
+      
+}  
+h1 {  
+    font-size: 2rem;  
+}  
+.outer  
+{  
+    background: url(./image.jpg);  
+    background-repeat: no-repeat;  
+    height: 100vh;  
+    width: 100vw;  
+    background-size: cover;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    flex-direction: column;  
+    overflow: auto;  
+      
+}  
+ 
+.myform button {  
+    width: 100px;  
+    height: 50px;  
+    border-radius: 10px;  
+    margin: auto;  
+    margin-left: 50px ;  
+}  
+.myform button:hover {  
+    background-color: rgb(122, 102, 223);  
+    font-weight: bolder; 
+}  
+   
+ 
+Prc 5 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Book Information</title> 
+    <link rel="stylesheet" type="text/css" href="prc5.css"> 
+    <script> 
+        function loadXMLDoc(filename) { 
+            if (window.XMLHttpRequest) { 
+                xhttp = new XMLHttpRequest(); 
+            } else { 
+                xhttp = new ActiveXObject("Microsoft.XMLHTTP"); 
+            } 
+            xhttp.open("GET", filename, false); 
+            xhttp.send(""); 
+            return xhttp.responseXML; 
+        } 
+ 
+        function displayBooks() { 
+            var xml = loadXMLDoc("prc5.xml"); 
+            var xsl = loadXMLDoc("prc5.xsl"); 
+ 
+            // code for IE 
+            if (window.ActiveXObject || "ActiveXObject" in window) { 
+                var ex = xml.transformNode(xsl); 
+                document.getElementById("booksTable").innerHTML = ex; 
+            } 
+            // code for Chrome, Firefox, Opera, etc. 
+            else if (document.implementation && document.implementation.createDocument) { 
+                var xsltProcessor = new XSLTProcessor(); 
+                xsltProcessor.importStylesheet(xsl); 
+                var resultDocument = xsltProcessor.transformToFragment(xml, document); 
+                document.getElementById("booksTable").appendChild(resultDocument); 
+            } 
+        } 
+    </script> 
+</head> 
+<body onload="displayBooks()"> 
+    <div id="booksTable"></div> 
+</body> 
+</html> 
+ 
+ 
+table { 
+    background-color: rgb(67, 114, 232); 
+    border-collapse: collapse; 
+    width: 100%; 
+} 
+ 
+th, td { 
+    border: 1px solid black; 
+    padding: 8px; 
+    text-align: left; 
+} 
+ 
+th { 
+    background-color:yellow; 
+} 
+  
+ 
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
+    <xsl:template match="/"> 
+        <table> 
+            <tr> 
+                <th>Title</th> 
+                <th>Author</th> 
+                <th>ISBN</th> 
+                <th>Publisher</th> 
+                <th>Edition</th> 
+                <th>Price</th> 
+            </tr> 
+             
+            <xsl:for-each select="books/book"> 
+                <tr> 
+                    <td><xsl:value-of select="title"/></td> 
+                    <td><xsl:value-of select="author"/></td> 
+                    <td><xsl:value-of select="isbn"/></td> 
+                    <td><xsl:value-of select="publisher"/></td> 
+                    <td><xsl:value-of select="edition"/></td> 
+                    <td><xsl:value-of select="price"/></td> 
+                </tr> 
+            </xsl:for-each> 
+        </table> 
+    </xsl:template> 
+</xsl:stylesheet> 
+ 
+ 
+<!ELEMENT books (book+)> 
+<!ELEMENT book (title, author, isbn, publisher, edition, price)> 
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT author (#PCDATA)> 
+<!ELEMENT isbn (#PCDATA)> 
+<!ELEMENT publisher (#PCDATA)> 
+<!ELEMENT edition (#PCDATA)> 
+<!ELEMENT price (#PCDATA)> 
+ 
+ 
+Prc 7 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<style> 
+    input { 
+        margin: 2vw 2vh;  
+    } 
+     
+ 
+</style> 
+<body> 
+    <div id="calculator"> 
+        <div class="enter"> Enter first Number : <input type="number" name="" 
+id="a"></div> 
+        <div class="enter">Enter operator Number :<input type="text" name="" 
+id="operator"></div> 
+        <div class="enter">Enter second Number :<input type="number" name="" id="b"></div> 
+        <button class="calculate">Calculate</button> 
+        Output =  
+        <span class="answer">Answer will display here </span> 
+    </div> 
+ 
+<script> 
+    let output = document.querySelector(".answer"); 
+    function cal(a,b,op) 
+    { 
+        if(op === "+") 
+        { 
+            output.innerText = a+b; 
+            console.log(a+b); 
+            alert(`Your answer is ${a+b}`); 
+        } 
+        else if(op === "-") 
+        { 
+            output.innerText = a-b; 
+            console.log(a-b); 
+            alert(`Your answer is ${a-b}`); 
+        } 
+        else if(op === "*") 
+        { 
+            output.innerText = a*b; 
+            console.log(a*b); 
+            alert(`Your answer is ${a*b}`); 
+        } 
+        else if(op === "/") 
+        { 
+            output.innerText = a/b; 
+            console.log(a/b); 
+            alert(`Your answer is ${a/b}`); 
+        } 
+    } 
+    let calculate = document.querySelector(".calculate"); 
+    calculate.addEventListener("click",()=> { 
+        let a = parseFloat(document.querySelector("#a").value); 
+        let op = document.querySelector("#operator").value; 
+        let b = parseFloat(document.querySelector("#b").value); 
+         
+        cal(a,b,op); 
+    }) 
+</script> 
+ 
+</body> 
+</html> 
+ 
+ 
+Prc 8 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<style> 
+    input { 
+        margin: 2vw 2vh;  
+    } 
+     
+ 
+</style> 
+<body> 
+    <div id="calculator"> 
+        <div class="enter"> Enter first Number : <input type="number" name="" 
+id="a"></div> 
+        <div class="enter">Enter operator Number :<input type="text" name="" 
+id="operator"></div> 
+        <div class="enter">Enter second Number :<input type="number" name="" id="b"></div> 
+        <button class="calculate">Calculate</button> 
+        Output =  
+        <span class="answer">Answer will display here </span> 
+    </div> 
+ 
+<script> 
+    let output = document.querySelector(".answer"); 
+    function cal(a,b,op) 
+    { 
+        if(op === "+") 
+        { 
+            output.innerText = a+b; 
+            console.log(a+b); 
+            alert(`Your answer is ${a+b}`); 
+        } 
+        else if(op === "-") 
+        { 
+            output.innerText = a-b; 
+            console.log(a-b); 
+            alert(`Your answer is ${a-b}`); 
+        } 
+        else if(op === "*") 
+        { 
+            output.innerText = a*b; 
+            console.log(a*b); 
+            alert(`Your answer is ${a*b}`); 
+        } 
+        else if(op === "/") 
+        { 
+            output.innerText = a/b; 
+            console.log(a/b); 
+            alert(`Your answer is ${a/b}`); 
+        } 
+    } 
+    let calculate = document.querySelector(".calculate"); 
+    calculate.addEventListener("click",()=> { 
+        let a = parseFloat(document.querySelector("#a").value); 
+        let op = document.querySelector("#operator").value; 
+        let b = parseFloat(document.querySelector("#b").value); 
+         
+        cal(a,b,op); 
+    }) 
+</script> 
+ 
+</body> 
+</html> 
+ 
+ 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<style> 
+    body { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center ; 
+    } 
+    #display { 
+        width: 50vw; 
+        height: auto; 
+        border: 2px solid black; 
+    } 
+</style> 
+<body> 
+    <div id="display"> 
+        <div>enter any text : <input id="first" type="text"></div> 
+        <div>enter how many times to print : <input id="second" type="number"></div> 
+        <button id="cal">print output =</button> 
+        <div>Output : <p class="output"></p></div> 
+    </div> 
+ 
+<script> 
+    let cal = document.querySelector("#cal"); 
+    let output = document.querySelector(".output"); 
+     
+    function func(second,one){ 
+        for(let i=0;i<second;i++) 
+        { 
+            output.innerText += one ;  
+            output.innerHTML += "<br>" ; 
+        } 
+ 
+    } 
+    cal.addEventListener("click",()=>{ 
+        let one = (document.querySelector("#first")).value; 
+        let second = parseInt((document.querySelector("#second")).value); 
+        console.log(second); 
+         
+        func(second,one); 
+    }) 
+     
+     
+</script>     
+</body> 
+</html> 
+ 
+ 
+Prc 9 
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Document</title> 
+  <style> 
+    .container { 
+      display: block; 
+      margin: auto; 
+    } 
+    body{ 
+      background-color: rgb(225, 237, 237); 
+    } 
+ 
+  </style> 
+</head> 
+ 
+<body> 
+  <script> 
+    function validateform() { 
+      var name = document.myform.name.value; 
+      var lname = document.myform.name.value; 
+      var password = document.myform.password.value; 
+      var email = document.myform.name.value; 
+      var mobile = document.myform.name.value; 
+      var adress = document.myform.name.value; 
+      // var lname=document.myform.name.value; 
+ 
+      if (name == null || name == "") { 
+        alert("Name can't be blank"); 
+        return false; 
+      } else if (password.length < 6) { 
+        alert("Password must be at least 6 characters long."); 
+        return false; 
+      } 
+      else if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) { 
+        alert('Please enter a valid e-mail address'); 
+        return false; 
+      } 
+      else if (lname == null || lname == "") { 
+        alert("Last Name cannot be empty!"); 
+      } 
+      else if (mobile.length != 10) { 
+        alert("Mobile number should have 10 digits"); 
+        return false; 
+      } 
+      else id(adress != ""){ 
+        alert("Address field is required"); 
+        return false; 
+      } 
+      return true; 
+    }       
+  </script> 
+ 
+    <div class="container"> 
+      <fieldset> 
+        <legend> 
+          <h2>Register User Information: </h2> 
+        </legend> 
+       
+      <br /> 
+ 
+        <form name="myform" method="post" 
+action="http://www.javatpoint.com/javascriptpages/valid.jsp" 
+          onsubmit="return validateform()"> 
+ 
+          <label for="fname">First Name:</label> 
+          <input type="text" id="name" name="name" placeholder="Enter First Name" /><br /> 
+ 
+          <label for="lname">Last Name:</label> 
+          <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" 
+/><br /> 
+ 
+          <label for="email">Email ID:</label> 
+          <input type="email" id="email" name="email" placeholder="example@domain.com" 
+/><br /> 
+ 
+          <label for="mobno">Mobile Number :</label> 
+          <input type="tel" pattern="[0-9]{10}" title="Please Enter 10 digit Mobile 
+Number" id="number" name="number" 
+            placeholder="Enter the number" /><br/> 
+ 
+          <label for="password">Password:</label> 
+          <input type="password" id="pass" name="password" placeholder="Enter Password" 
+/><br /> 
+ 
+          <label for="cpassword">confirm password</label> 
+          <input type="password" id="cpass" name="confirmpassword" placeholder="Re-enter" 
+/><br /> 
+ 
+          <label for=" address">Address:</label> 
+          <textarea rows="4" cols="50" id="address" name="address"></textarea><br /> 
+ 
+          <button type="submit" class="btn btn-primary">Submit</button> 
+ 
+          <button type="reset" class="btn btn-default">Reset</button> 
+ 
+        </form>   
+    </div> 
+  </fieldset> 
+  </body> 
+</html> 
+ 
+ 
+ 
